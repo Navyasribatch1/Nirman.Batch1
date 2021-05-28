@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> --> 
+
+
+    <title>Smart Health Consulting</title>
+    <style>
+      
+   .jumbotron-fluid img{
+    height: 500px;
+    object-fit: cover;
+    } 
+    .appointment{
+    color: black;
+    position: absolute;
+    background-image: url(dapp1.jfif);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:transparent ;
+    }
+    .call{
+    float:right;
+    }
+    .footer{
+      background-color: black;
+      color: white;
+    }
+    .insta{
+      color:rgba(121, 15, 182, 0.733);
+    }
+    .contactbody{
+      background-color: rgb(228, 225, 225);
+    }
+    .c1:hover{
+      background-color: rgb(83, 146, 228);
+      transform: scale(1.1);
+      color: whitesmoke;
+    }
+    
+    .c2:hover{
+      background-color: rgb(206, 233, 153);
+      transform: scale(1.1);
+    }
+    .s:hover{
+      background-color: lightgoldenrodyellow;
+      transform: scale(1.1);
+    }
+    .d1{
+      position: relative;
+      overflow:hidden;
+      transition: 0.2s all;
+    }
+    .d1:hover .text{
+      height: 100%;
+    }
+    .para{
+      position: absolute;
+      top: 30%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: darkblue;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .text{
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      overflow: hidden;
+      height: 0px;
+      width: 100%;
+      transition: .5s ease;
+    }
+    .b:hover{
+      color: darkorange;
+    }
+    .b1:hover{
+      color: black;
+    }
+    </style>
+  </head>
+  <body>
+  <div id="smarthealthconsulting">
+  <div id="home">
+    <span>
+   <div class="bg-dark p-2">
+    <button class="call btn btn-success" data-target="#Login" data-toggle="modal"><b>Login</b></button>
+    <a href="#smarthealthconsulting"><i class="call fa fa-twitter bg-info text-white p-1 m-2" aria-hidden="true"></i></a>
+    <a href="#smarthealthconsulting"><i class="call fa fa-instagram bg-danger text-white p-1 m-2" aria-hidden="true"></i></a>
+    <a href="#smarthealthconsulting"><i class="call fa fa-facebook bg-primary text-white p-1 m-2" aria-hidden="true"></i></a>
+    
+    <i class=" fa fa-phone text-success text-right p-2 ml-auto" aria-hidden="true">  9876543210</i>
+    <i class=" fa fa-paper-plane text-primary text-right p-2 ml-auto" aria-hidden="true">  HealthCare@gmail.com</i>
+   </div></span>
+
+   <!-- nav start -->
+   <nav class="navbar navbar-light navbar-expand-md bg-info">
+      <a class="navbar-brand" href=""><img src="icon7.jpg" alt="logo" width="50px" height="40px" class="rounded"><span class="px-2"><b>HEALTH CARE</b></span> </a>
+      <button class="navbar-toggler bg-white ml-auto">
+          <span class="navbar-toggler-icon" data-target="#nav" data-toggle="collapse"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+              <a class="nav-link text-white" href="#home">HOME</a>
+          </li>
+          <li class="nav-item dropdown ml-auto">
+              <a class="nav-link text-white dropdown-toggle" data-target="#dp" data-toggle="dropdown" href="#about">ABOUT</a>
+              <div id="dp" class="dropdown-menu">
+                <a href="#aboutus" class="dropdown-item">About Us</a>
+                <a href="#best-facilities" class="dropdown-item">Best Facilities</a>
+              </div>
+          </li>
+          <li class="nav-item ml-auto dropdown">
+              <a class="nav-link text-white dropdown-toggle" data-target="#dps" data-toggle="dropdown" href="#department">DEPARTMENT</a>
+              <div id="dps" class="dropdown-menu">
+                <a href="#b1" class="dropdown-item">Cardiologist</a>
+                <a href="#b2" class="dropdown-item">Dentist</a>
+                <a href="#b3" class="dropdown-item">ENT specialist</a>
+                <a href="#b4" class="dropdown-item">Gynaecologist</a>
+                <a href="#b5" class="dropdown-item">Orthopaedic surgeon</a>
+                <a href="#b6" class="dropdown-item">Paediatrician</a>
+                <a href="#b7" class="dropdown-item">Veterinarian</a>
+                <a href="#b8" class="dropdown-item">Neurologist</a>
+              </div>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link text-white" href="#doctors">DOCTORS</a>
+        </li>
+          <li class="nav-item ml-auto">
+              <a class="nav-link text-white" href="#service">SERVICES</a>
+          </li>
+          <li class="nav-item ml-auto dropdown">
+            <a class="nav-link text-white dropdown-toggle" data-target="#blog1" data-toggle="dropdown" href="#blog">BLOG</a>
+            <div id="blog1" class="dropdown-menu">
+              <a href="#blog" class="dropdown-item">Updates</a>
+              <a href="#feedback" class="dropdown-item">Feedback</a>
+            </div>  
+        </li>
+          <li class="nav-item ml-auto">
+              <a class="nav-link text-white" href="#contact">CONTACT</a>
+          </li>
+          <li class="nav-item ml-auto">
+             <button class="btn btn-success" data-target="#appointment" data-toggle="modal"><b>Appointment</b></button>
+        </li>
+        </ul>
+      </div>
+  </nav>
+  <!-- Nav End -->
+
+  <!-- carousel start -->
+    <div id="indicator" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="bg-info" data-target="#indicator" data-slide-to="0"></li>
+        <li class="bg-info" data-target="#indicator" data-slide-to="1"></li>
+        <li class="bg-info" data-target="#indicator" data-slide-to="2"></li>
+        <li class="bg-info" data-target="#indicator" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron-fluid">
+          <img src="img5.jpg" alt="" class="d-block w-100">
+          <div class="carousel-caption text-dark">
+            <h2><b>SMART HEALTH CONSULTING</b></h2>
+            <h5> We are here for your Care</h5>
+            <button class="btn btn-outline-success" data-target="#appointment" data-toggle="modal"><b> Make an appointment</b></button>
+          </div> 
+        </div></div>
+        <div class="carousel-item">
+          <div class="jumbotron-fluid">
+          <img src="img23.jpg" alt="" class="d-block w-100">
+          <div class="carousel-caption text-dark w-50 ml-auto">
+            <h2><b>We help you to find the best doctor around you</b></h2>
+            <h5> We are here for your Care</h5>
+            <button class="btn btn-outline-success" data-target="#appointment" data-toggle="modal"><b> Make an appointment</b></button>
+          </div> 
+        </div></div>
+        <div class="carousel-item">
+          <div class="jumbotron-fluid">
+          <img src="img33.jpg" alt="" class="d-block w-100">
+          <div class="carousel-caption text-dark ">
+            <h2><b>Your Health is always in the first place</b></h2>
+            <h5> We are here for your Care</h5>
+            <button class="btn btn-outline-success" data-target="#appointment" data-toggle="modal"><b> Make an appointment</b></button>
+          </div> 
+        </div></div>
+        <div class="carousel-item">
+          <div class="jumbotron-fluid">
+          <img src="img45.jpg" alt="" class="d-block w-100">
+          <div class="carousel-caption text-dark">
+            <h2><b>Helping to improve quality stimulate innovation</b></h2>
+            <h5>We are here for your Care</h5>
+            <button class="btn btn-outline-success" data-target="#appointment" data-toggle="modal"><b> Make an appointment</b></button>
+          </div> 
+        </div></div>
+        
+        <a href="#indicator" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#indicator" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>  
+        
+      </div>
+    </div>
+  </div>
+    <!-- carousel End -->
+
+
+    <!-- model for login -->
+    <div class="modal"  id="Login">
+      <div class=" modal-dailog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="m-auto"><b>Log in</b></h1>
+            <button type="button" class="close bg-danger" data-dismiss="modal">&times</button>
+          </div>
+          <div class="modal-body bg-dark">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Enter UserName" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" placeholder="Enter Password" required>
+              </div> 
+              <div class="form-group">
+                <input class="btn btn-success" type="submit" value="submit">
+                <button class="btn btn-danger" data-dismiss="modal">LogOut</button>
+                <button class="call btn btn-primary" data-target="#register" data-toggle="modal"><b>Register here</b></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal login end  -->
+
+<!-- modal for registration -->
+<div class="container">
+  <div class="modal bg-info"  id="register">
+    <div class=" modal-dailog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="m-auto"><b>Registration Form</b></h1>
+          <button type="button" class="close bg-danger" data-dismiss="modal">&times</button>
+        </div>
+        <div class="modal-body bg-info">
+          <form action="">
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label class="form-control-label" for="">First Name<span class="text-danger">*</span></label><br>
+                  <input class="form-control" type="text" placeholder="First Name">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label class="form-control-label" for="">Last Name<span class="text-danger">*</span></label><br>
+                  <input class="form-control" type="text" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label class="form-control-label" for="">Enter Age</label><br>
+                  <input class="form-control" type="text" placeholder=" Enter Age">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="">Date of Birth</label>
+              <input class="form-control" type="date">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" for="">Phone Number</label><br>
+              <input class="form-control" type="text" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" for="">Email-ID</label><br>
+              <input class="form-control" type="email" placeholder="Enter Email-ID">
+            </div>
+
+             <div class="form-group">
+             <label for="">Gender</label>
+             <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="abc" id="">
+                <label for="" class="form-check-label">Male</label>
+             </div>
+             <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="abc" id="">
+                <label for="" class="form-check-label">Female</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" for="">Address</label>
+              <input class="form-control" type="text" placeholder="Enter Address">
+            </div><hr><hr>
+
+            <div class="form-group">
+              <label class="form-control-label" for="">Reason for Registration</label>
+              <input class="form-control" type="text" placeholder="Enter Reason">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-control-label" for="">Specialized Doctor</label>
+              <select class="custom-select">
+                <option value="">Cardiologist</option>
+                <option value="">Dentist</option>
+                <option value="">ENT specialist</option>
+                <option value="">Gynaecologist</option>
+                <option value="">Orthopaedic surgeon</option>
+                <option value="">Paediatrician</option>
+                <option value="">Veterinarian</option>
+                <option value="">Neurologist</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+              <label for="">Health Satatus</label>
+              <textarea class="form-control" name="" id="" cols="5" rows="5" placeholder="Status of the Health-condition"></textarea>
+            </div>
+            
+            <div class="form-group  text-center">
+              <input class="btn btn-success" type="submit" value="Submit">
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div> 
+  <!-- modal register end -->
+
+<!-- modal for appointment -->
+  <div class="modal" id="appointment">
+    <div class="modal-dailog">
+      <div class="appointment modal-content">
+        <div class="modal-header">
+          <h1 class="text-center"><b> DOCTOR APPOINTMENT FORM</b></h1>
+          <button class="close bg-danger" data-dismiss="modal">&times</button>
+        </div>
+        <div class="modal-body">
+          <form action="" > 
+            <div class="row">
+             <div class="col">
+               <div class="form-group">
+                 <label class="form-control-label" for=""><b>Name</b><span class="text-danger">*</span></label><br>
+                 <input class="form-control-input" type="text" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                 <label class="form-control-label" for=""><b>Email</b><span class="text-danger">*</span></label><br>
+                 <input class="form-control-input" type="text" placeholder="Mail@example.com" required>
+               </div>
+               <div class="form-group"> 
+                 <label class="form-control-label" for=""><b>Phone Number</b><span class="text-danger">*</span></label><br>
+                 <input class="form-control-input" type="text" placeholder="Phone Number" required>
+               </div>
+               <div class="form-group">
+                 <label for=""><b>Gender</b> <span class="text-danger">*</span></label>
+                 <div class="form-check-inline ">
+                 <input class="form-check-input" type="radio" name="a" id="" required>
+                 <label class="form-check-label" for="">Male</label></div>
+                 <div class="form-check-inline">
+                 <input class="form-check-input" type="radio" name="a" id="" required>
+                 <label class="form-check-label" for="">Female</label></div>
+             </div>
+             </div>
+             <div class="col">
+               <div class="form-group">
+                 <label class="form-control-label" for=""><b>Date of Birth</b><span class="text-danger">*</span></label><br>
+                 <input class="form-control-input" type="date" required>
+               </div>
+     
+               <div class="form-group">
+                 <label class="form-control-label" for=""><b> Address</b><span class="text-danger">*</span></label><br>
+                 <input class="form-control-input" type="text" placeholder="Address" required>
+               </div>
+               <div class="form-group">
+                 <input class="form-control-input" type="text" placeholder="Line">  
+               </div> 
+               <div class="form-group">
+                 <input class="form-control-input" type="text" placeholder="City">  
+               </div>
+               <div class="form-group">
+                 <input class="form-control-input" type="text" placeholder="Pin code">  
+               </div>
+             </div>
+           </div>
+          
+           <div class="row">
+             <div class="col">
+               <div class="form-group">
+                 <label for=""><b>Best Time To Call You</b><span class="text-danger">*</span></label>
+                 <div class="form-check">
+                 <input class="form-check-input" type="radio" name="ab" id="" required>
+                 <label for="" class="form-check-label">Morining</label></div>
+                 <div class="form-check">
+                 <input class="form-check-input" type="radio" name="ab" id="" required>
+                 <label for="" class="form-check-label">Afternoon</label></div>
+                 <div class="form-check">
+                 <input class="form-check-input" type="radio" name="ab" id="" required>
+                 <label for="" class="form-check-label">Evening</label></div>
+               </div>  
+             </div>
+     
+             <div class="col">
+               <div class="form-group">
+                 <label for=""><b> I Would Like To(choose One)</b><span class="text-danger">*</span></label>
+                 <div class="form-check">
+                 <input class="form-check-input" type="radio" name="abc" id="" required>
+                 <label for="" class="form-check-label">A New Patient Appointment</label></div>
+                 <div class="form-check">
+                 <input class="form-check-input" type="radio" name="abc" id="" required>
+                 <label for="" class="form-check-label">A Routine Checkup</label></div>
+                 <div class="form-check">
+                 <input class="form-check-input" type="radio" name="abc" id="" required>
+                 <label for="" class="form-check-label">A Comprehensive Health Exam</label></div>
+               </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col">
+              <div class="text-right">
+                <input class="btn btn-success" type="submit" value="submit"></div>
+           </div></div>
+             
+         </form>
+        </div>
+        <div class="modal-footer ml-auto">
+          <button class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+       </div>
+    </div>
+  </div>
+  <!-- Modal End -->
+    
+  <!-- about -->
+  <div id="about">
+    <div class="jumbotron m-1">
+    <div class="row" id="aboutus">
+      <div class="col-md ">
+        <h1>About HealthCare</h1>
+        <h7> This system aims at maintaining patient health records and even getting appointments from various doctors for related treatments. The system user must register as a member of this system and keep updating his medical history. Patients can then select from a list of specialized doctors for respective treatments such as skin specialist, ENT specialist cardiologist....etc at particular locations. Patients may also select suitable appointment timings for their meeting.</h7><br><br>
+        <div class="row">
+          <div class="col-md m-1">
+           <div class="c2 card p-3">
+              <h3 class="text-center"> Our Vision</h3>
+              <h7>Health care will provide an unparalleled experience as the most trusted partner for health care. Your Health is Our Priority.</h7><br>
+           </div>
+          </div>
+          <div class="col-md m-1">
+            <div class="c2 card p-3">
+             <h3 class="text-center">Our Mission</h3>
+             <h7>To inspire hope and contribute to health and well-being by providing the best care to every patient through integrated clinical practice.</h7>
+            </div>
+          </div>
+        </div>
+          <br>
+          <button class="btn btn-outline-success " data-target="#appointment" data-toggle="modal"><b> Make an appointment</b></button>
+          <a href="#contact"> <button class="btn btn-outline-primary"><b>Contact Us</b></button></a>       
+        </div>
+      <div class="col-md py-2">
+        <img src="img40a.png" alt="" class="about d-flex w-100">
+      </div>  
+    </div> 
+   </div>
+    
+   <div class="jumbotron m-1">
+    <div id="best-facilities">
+    <div class="row">
+      <div class="col-md">
+        <img src="img43.jpg" alt="" class="d-flex w-100" style=" height: 400px;">
+      </div>
+      <div class="col">
+       <h1> What makes us Best?</h1>
+
+        <div class="row py-2">
+          <div class="col-1 m-1">
+           <i class="fa fa-user-md text-primary fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="col-md m-1">
+           <h4>Qualified Doctors</h4>
+            <small>The best qualified doctors, the study found substantial variation in the density of health workers across States and districts.</small>
+          </div>
+          <div class="col-1 m-1">
+           <i class="fa fa-file-text-o text-primary fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="col-md m-1">
+            <h4>Online Enrollment</h4>
+            <small>Get the Best Guidance for Any Health Issue with Instant Online Doctor Consultation. Instant Consultation Available 24/7 with No of Appointment Booking Hustle.</small>
+          </div>
+        </div>
+
+        <div class="row py-2">
+          <div class="col-1 m-1">
+            <i class="fa fa-stethoscope text-primary fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="col-md m-1">
+            <h4>Free Consultation</h4>
+            <small>Instead of travelling to their appointment, patients or service users enter an online waiting area from their computer, smartphone or tablet, the service is notified when they arrive.</small>
+        </div>
+        <div class="col-1 m-1">
+          <img src="icon12.png" alt="" style="width: 25px; height: 30px;">
+         </div>
+         <div class="col-md m-1">
+           <h4>Modern Facilities</h4>
+           <small>Some surgeries are too complex to be done safely in doctor's office but simple enough that patients don't require hospital care after undergoing. surgical centers are designed morden facilities</small>
+         </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</div> 
+</div> 
+<!-- about end -->
+
+<!-- department start -->
+<div id="department">
+  <div class="jumbotron m-1">
+  <h1 class="text-center">Specialist Departments</h1>
+  <div class="text-center">
+    <h7 >Your health is our Priority</h7>
+  </div>
+  <div class="container">
+    <div class="row m-2">
+      <div id="b1" class="col-md m-2">
+        <div class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x " aria-hidden="true"></i>
+          <h2>Cardiologist</h2>
+          <p>To consult Cardiologist <br><br> >> <a href="#a1"><button  class="btn btn-success">Click here</button></a> </p>
+        </div>
+      </div>
+      <div class="col-md m-2">
+        <div id="b2" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>
+          <h2>Dentist</h2>
+          <p>To consult Dentist <br><br> >> <a href="#a2"><button  class="btn btn-success">Click here</button></a> </p>
+       </div>
+      </div>
+      <div class="col-md m-2">
+        <div id="b3" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>
+          <h2> ENT specialist</h2>
+          <p>To consult ENT specialist <br><br> >><a href="#a3"><button  class="btn btn-success">Click here</button> </a></p>
+        </div>
+      </div>
+    </div>
+  <!-- 1st row -->
+    <div class="row m-2">
+      <div class="col-md m-2">
+       <div id="b4" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>
+          <h2>Gynaecologist</h2>
+          <p>To consult Gynaecologist <br><br> >><a href="#a4"><button class="btn btn-success">Click here</button></a> </p>
+        </div>
+      </div>
+      <div class="col-md m-2">
+        <div id="b5" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>
+          <h2>Orthopaedic surgeon</h2>
+          <p>To consult Orthopaedic surgeon <br><br> >><a href="#a5"><button  class="btn btn-success">Click here</button></a> </p>
+        </div>
+      </div>
+      <div class="col-md m-2">
+        <div id="b6" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>
+          <h2>Paediatrician</h2>
+          <p>To consult Paediatrician <br><br> >><a href="#a6"> <button  class="btn btn-success">Click here</button></a> </p>
+        </div>
+      </div>
+    </div>
+  <!-- 2nd row -->
+    <div class="row m-2">
+      <div class="col-md m-2">
+        <div id="b7" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x " aria-hidden="true"></i>
+          <h2>Veterinarian</h2>
+          <p>To consult Veterinarian <br><br> >> <a href="#a7"><button  class="btn btn-success">Click here</button></a> </p>
+        </div>
+      </div>
+      <div class="col-md m-2">
+        <div id="b1" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>
+          <h2>Cardiologist</h2>
+          <p>To consult Cardiologist <br><br> >><a href="#a1"> <button  class="btn btn-success">Click here</button></a> </p>
+        </div>
+      </div>
+      <div class="col-md m-2">
+        <div id="b8" class="c1 card text-center py-3 m-0">
+          <i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>
+          <h2>Neurologist</h2>
+          <p>To consult Neurologist <br><br> >><a href="#a8"> <button  class="btn btn-success">Click here</button></a> </p>
+        </div>
+      </div>
+    </div>
+    <!-- 3rd row -->
+  </div>
+</div>  
+</div>
+<!-- department end-->
+
+<!-- doctor start -->
+<div id="doctors">
+  <div class="jumbotron m-1">
+  <h1 class="text-center">Our Specialist Qualified Doctors</h1>
+  <div class="text-center m-1">
+    <h7>The best qualified doctors, the study found substantial variation in the density of health workers across States and districts.</h7>
+  </div> 
+
+  <div class="row m-1">
+    <div id="a1" class="d col-md active">
+      <div class="card d1">
+        <img src="a14.jpg" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+        <div class="card-body text-center">
+          <div class="text">
+            <h5 class="para">  <b>A cardiologist is a doctor that deals with the cardiovascular system. cardiologist means who treats any abnormality in our blood vessels and heart diseases.</b> </h5>
+          </div>
+          <h2>Dr. Lloyd Wilsons</h2>
+          <h5 class="text-primary">CARDIOLOGIST</h5>
+          <div>
+            <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="a2" class="d col-md py-1 active">
+      <div class="card d1">
+        <img src="a9.jpg" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+        <div class="card-body text-center">
+          <div class="text">
+            <h5 class="para"> <b>A dentist is a doctor of oral health- teeth, tongue and gums. A dentist is known to diagnose who trained to treat issues of these teeth, tongue and gums.</b></h5>
+          </div>
+          <h2>Dr. Navya Sri Chowki</h2>
+          <h5 class="text-primary">DENTIST</h5>
+          <div>
+            <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="a3" class="d col-md active">
+      <div class="card d1">
+        <img src="a2.jpg" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+        <div class="card-body text-center">
+          <div class="text">
+            <h5 class="para"> <b>ENT stands for ear, nose and throat. A specialist who treats and diagnoses the issues and troubles of these three areas. Also known as an otolaryngologist.</b></h5>
+          </div>
+          <h2>Dr. Rahul Esiripally</h2>
+          <h5 class="text-primary">ENT SPECIALIST</h5>
+          <div>
+            <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="a4" class="d col-md py-1 active">
+      <div class="card d1">
+        <img src="a10.jpg" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+        <div class="card-body text-center">
+          <div class="text">
+            <h5 class="para"><b>A gynaecologist is trained to treat the female reproductive system which includes the vagina, uterus, ovaries and breasts. who treat for the female reproductive system.</b>  </h5>
+          </div>
+          <h2>Dr. Keerthana shetty</h2>
+          <h5 class="text-primary">GYNAECOLOGIST</h5>
+          <div>
+            <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+            <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- 2ND ROW -->
+
+    <div class="row m-1">
+      <div id="a5" class="d col-md active">
+        <div class="card d1">
+          <img src="a8.jpg" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+          <div class="card-body text-center">
+            <div class="text">
+              <h5 class="para"> <b>An orthopaedic surgeon is known to deal with the musculoskeletal system-muscles and bones. Any fracture, pain need to consult an orthopaedic surgeon.</b></h5>
+            </div>
+            <h2>Dr. Arjun Reddy Sham</h2>
+            <h5 class="text-primary">ORTHOPAEDIC</h5>
+            <div>
+              <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="a6" class="d col-md py-1 active">
+        <div class="card d1">
+          <img src="a3.png" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+          <div class="card-body text-center">
+            <div class="text">
+              <h5 class="para"><b>Paediatricians doctors treat for children. Child’s body functions in a different manner from ours, due to many factors like age and growing stages, their illness and health issues. </b></h5>
+            </div>
+            <h2>Dr. Rachel Parker</h2>
+            <h5 class="text-primary">PAEDIATRICIAN</h5>
+            <div>
+              <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="a7" class="d col-md active">
+        <div class="card d1">
+          <img src="a25.png" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+          <div class="card-body text-center">
+            <div class="text">
+              <h5 class="para"><b>A Veterinarian doctors who treat for animals. Mental health, comes the issue of buddies: animals. Treatment and diagnosis of in animals is done by a veterinarian. </b></h5>
+            </div>
+            <h2>Dr. Geethika Vemula</h2>
+            <h5 class="text-primary">VETERINARIAN</h5>
+            <div>
+              <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="a8" class="d col-md py-1 active">
+        <div class="card d1">
+          <img src="a22.jpg" alt="" class="card-img-top d-block w-100" style="height: 310px;">
+          <div class="card-body text-center">
+            <div class="text">
+              <h5 class="para"><b>A neurologist is responsible for treating and diagnosing issues of the nervous system. Our nervous system which includes like our brain, spinal cord, sensory organs, and all nerves.</b> </h5>
+            </div>
+            <h2>Dr. Abhi Ram Goud</h2>
+            <h5 class="text-primary">NEUROLOGIST</h5>
+            <div>
+              <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-instagram fa-2x insta" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-danger" aria-hidden="true"></i></a>
+              <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary" aria-hidden="true"> </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+<!--  doctor end -->
+
+<!-- services start -->
+<div id="service">
+  <div class="jumbotron m-1">
+    <h1 class="text-center">Our Best services</h1>
+    <p class="text-center">Providing health care services means "the timely use of personal health services to achieve the best possible health outcomes". </p>
+    <div class="row m-1">
+      <div class="col-md ">
+        <div class="card s p-3">
+          <img src="icon13.png" alt="" style="width: 80px; height: 80px; background-position: center;">
+          <h4>Diagnostics and emergency treatment</h4>
+          <p>Unpredictability, breadth of content and the frequent need for speed are the challenges, which characterize emergency medicine. It has always found itself in an area in which a broad basis of medical knowledge.</p>
+
+        </div>  
+      </div>
+      <div class="col-md py-1">
+        <div class="card s p-3">
+          <img src="icon3.jfif" alt="" style="width: 80px; height: 80px; background-position: center;">
+          <h4>Home medical appointments</h4>
+          <p>A visit made by a health professional to a patient's home, with face to face contact b/w the HP and the patient, less b/w the HP and the patient's family. Home visits are carried out by medical staff, GPs, nurses and allied HPs.</p>
+        </div> 
+      </div>
+      <div class="col-md ">
+        <div class="card s p-3">
+          <img src="icon9.jfif" alt="" style="width: 80px; height: 80px;">
+          <h4>Pharmacy refunded from hospital</h4>
+          <p>Product only be accepted back if it meets the below criteria. Product that is accepted back may only be returned to our wholesaler, our reverse wholesaler or destroyed with Pharmacy Waste Handling Policy.</p>
+        </div> 
+      </div>
+    </div>
+
+    <div class="row m-1">
+      <div class="col-md">
+        <div class="card s p-3">
+          <img src="icon14.jfif" alt="" style="width: 75px; height: 80px; background-position: center;">
+          <h4>Long term medical care in a hospital</h4>
+          <p>Long-term medical care in hospital facility: A facility that provides rehabilitative, restorative, and or ongoing skilled nursing care to patients or residents in need of assistance with activities of daily living.</p>
+        </div> 
+      </div>
+      <div class="col-md py-1">
+        <div class="card s p-3">
+          <img src="icon12.png" alt="" style="width: 80px; height: 80px;">
+          <h4>A specialized laboratory research</h4>
+          <p>A type of reference lab dedicated to a particular type of 'esoteric' testing–eg, allergy, coagulation, drugs–especially drugs of abuse, endocrinology, genetics, paternity, virology, etc. Cf Reference laboratory.</p>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card s p-3">
+          <img src="icon15.jpg" alt="" style="width: 80px; height: 80px; background-position: center;">
+          <h4>Medical transport to the hospital</h4>
+          <p>Patient transport is a service that transfers patients to and from medical facilities in non-emergency situations. It is provided to a patient who needs to be transferred facility and provide an emergency services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- services end -->
+
+<!-- blog start -->
+
+ <div id="blog" class="jumbotron m-1">
+  <h2 class="text-center">BLOG</h2>
+  <h5 class="text-center">Gets Every Single Updates Here</h5>
+  <div class="row">
+    <div class="col-md">
+      <div class="card">
+        <img src="yoga.jpg" alt="" class="card-img-top d-block w-100" style="height: 200px;" >
+        <div class="card-body b">
+          <small class="text-danger">Admin May 8 2020 4 <i class="fa fa-comment-o" aria-hidden="true"></i></small>
+          <h3>Here's why yoga is best for your health care</h3>
+          <p>Regular yoga practice may reduce levels of stress and healthier hearts, including high blood pressure and excess weight, can also be addressed through yoga.</p>
+          <a href="blog"><h6>Read more>></h6></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md py-1">  
+      <div class="card">
+        <img src="sleep.jpg" alt="" class="card-img-top d-block w-100" style="height: 200px;">
+        <div class="card-body b">
+          <small class="text-danger">Admin Jun 8 2019 4 <i class="fa fa-comment-o" aria-hidden="true"></i></small>
+          <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
+          <p>When you're not getting enough shut-eye, your body releases cortisol, a stress hormone that can break down collagen, according to the National Sleep Foundation.</p>
+          <a href="blog"><h6>Read more>></h6></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md"> 
+      <div class="card">
+        <img src="blog.png" alt="" class="card-img-top d-block w-100" style="height: 200px;">
+        <div class="card-body m-1 b">
+          <small class="text-danger">Admin June 8 2017 4 <i class="fa fa-comment-o" aria-hidden="true"></i></small>
+          <h3>live better get to know your medical technology</h3>
+          <p>It could be argued that of all the ways technology has improved the lives of humans across the globe, none are as important as the technological advances in medicine.</p>
+          <a href="blog"><h6>Read more>></h6></a>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- patient say -->
+
+<div id="feedback" class="jumbotron m-1 bg-primary">
+  <h1 class="text-center text-white py-3">Our Patient Says</h1>
+  <div class="row">
+    <div class="col-md">
+      <div class="card bg-primary">
+        <img src="p1.png" alt="" width="180px" height="180px" class="rounded-circle m-auto">
+        <div class="card-body b1 text-center text-white">
+          <p >I'm very happy after recovery of my heart surgery. Thanks a lot to Hear care.</p>
+          <h4>B. Arun Prakash</h4>
+          <h6>PATIENT</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card bg-primary">
+        <img src="p3.jpg" alt="" width="180px" height="180px" class="rounded-circle m-auto">
+        <div class="card-body b1 text-center text-white">
+          <p>Thanks for healping me to see this world with my eyes. A great Eye Specialist.</p>
+          <h4>G. Ananya</h4>
+          <h6>PATIENT</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card bg-primary">
+        <img src="p2.jpg" alt="" width="180px" height="180px" class="rounded-circle m-auto">
+        <div class="card-body b1 text-center text-white">
+          <p >Thank you for Health care to be supported in my health development of bone fracture.</p>
+          <h4>A. Raguram</h4>
+          <h6>PATIENT</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- blog end -->
+
+<!-- contact start -->
+<div id="contact">
+  <h1 class="text-center">Contact Us</h1>
+  <p class="text-center m-1">You can Contact us by using Google form, Mail, Telephone and Website. </p>
+  <div class="row m-1 p-2">
+    <div class="col-md m-1">
+      <div class="c2 card contactbody text-center py-4">
+        <a href="#smarthealthconsulting"><i class="fa fa-map-signs fa-2x text-primary" aria-hidden="true"></i></a>
+        <div class="card-body text-center">
+          <h4>ADDRESS</h4>
+          <p>HealthCare Hospital, KPHB Phase 1, Kukatpally, Hyderabad, Telangana-500072</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md m-1">
+      <div class="c2 card contactbody text-center py-4">
+        <a href="#smarthealthconsulting"><i class="fa fa-phone fa-2x text-primary" aria-hidden="true"></i></a>
+        <div class="card-body text-center">
+          <h4>CONTACT NUMBER</h4>
+          <p>+ 1234 567 890</p><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="col-md m-1">
+      <div class="c2 card contactbody text-center py-4">
+        <a href="#smarthealthconsulting"><i class="fa fa-paper-plane fa-2x text-primary" aria-hidden="true"></i></a>
+        <div class="card-body text-center">
+          <h4>EMAIL ADDRESS</h4>
+          <p>HealthCare@gmail.com</p><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="col-md m-1">
+      <div class="c2 card contactbody text-center py-4">
+        <a href="#smarthealthconsulting"><i class="fa fa-globe fa-2x text-primary" aria-hidden="true"></i></a>
+        <div class="card-body text-center">
+          <h4>WEBSITE</h4>
+          <p>HealthCare.com</p><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+  <div class="row m-1 p-2">
+    <div class="col-md m-3">
+      <h1>Get In Touch</h1>
+      <form action="">
+        <div class="form-group">
+          <label class="form-control-label" for="">Name</label><br>
+          <input class="form-control" type="text" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label class="form-control-label" for="">Email-ID</label><br>
+          <input class="form-control" type="text" placeholder="Enter email address">
+        </div>
+        <div class="form-group">
+          <label class="form-control-label" for="">Subject</label><br>
+          <input class="form-control" type="text" placeholder="Your Subject of this message">
+        </div>
+        <div class="form-group">
+          <label class="form-control-label" for="">Message</label><br>
+          <textarea class="form-control" name="" id="" cols="5" rows="5" placeholder="Say something about us"></textarea>
+        </div>
+        <div class="form-group  text-center">
+          <input class="btn btn-success" type="submit" value="Send Message">
+        </div>
+      </form>
+    </div>
+    <div class="col-md contact1">
+      <div class="container">
+      <img src="map.jpg" alt="" class="d-flex w-100">
+    </div></div>
+  </div>
+</div>
+
+
+</div>
+<!-- contact end -->
+
+<!-- footer -->
+<div class="bg-dark text-center py-4">
+  <a href="#smarthealthconsulting"> <i class="fa fa-facebook fa-2x text-primary m-2" aria-hidden="true"></i></a>
+  <a href="#smarthealthconsulting"> <i class="fa fa-instagram fa-2x insta m-2" aria-hidden="true"></i></a>
+  <a href="#smarthealthconsulting"> <i class="fa fa-google-plus fa-2x text-success m-2" aria-hidden="true"></i></a>
+  <a href="#smarthealthconsulting"> <i class="fa fa-youtube fa-2x text-danger m-2" aria-hidden="true"></i></a>
+  <a href="#smarthealthconsulting"> <i class="fa fa-telegram fa-2x text-info m-2" aria-hidden="true"></i></a>
+  <a href="#smarthealthconsulting"><i class="fa fa-twitter fa-2x text-primary m-2" aria-hidden="true"></i></a>
+</div>
+
+<div class="footer footer-copyright text-center py-3">&copy; 2020 Copyright:
+  <a href="#smarthealthconsulting">navyasrichowki@gmail.com</a>
+</div>
+<!-- footer end -->
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
